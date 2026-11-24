@@ -15,8 +15,8 @@
  }
 
  body{
-    width:50%;
-    height:50vh;
+    width:100%;
+    height:100vh;
     overflow-x: hidden;
     background-color: black;
     color: white;
@@ -67,8 +67,9 @@ transform: scale(1.1);
  @media(max-width:995px){
 nav{
     position:absolute;
-    top:100%;
-    width:40%;
+    display: none;
+    top:0;
+    width:0;
     border-left: 3px solid #b74b4b;
     border-bottom: 3px solid #b74b4b;
     border-bottom-left-radius: 2rem;
@@ -116,12 +117,6 @@ section{
    
 }
 
-.home-img img{
- 
-    margin-left: 400px;
-
-}
-
 
 span{
     color: #b74b4b;
@@ -133,11 +128,13 @@ span{
     font-weight: 700 ;
 }
 
-
+.home-content p{
+    font-size: 1.6rem;
+}
 
 .home-img img{
     position: relative;
-    width: 50vh;
+    width: 30vw;
     border-radius: 50%;
     font-size:  5rem;
 }
@@ -168,3 +165,27 @@ font-size: 6rem;
     box-shadow:0,0 25px #b74b4b
 }
 
+@media(max-width:1000px){
+.home{
+    gap: 4rem;
+}
+}
+
+@media(max-width:995px){
+.home{
+    flex-direction: column;
+    margin:5rem 4rem,
+    }
+
+    .home.home-contenth3{
+    font-size: 2.5rem; ;
+    }
+.home-contenth1{
+    font-size:5rem ;
+
+}
+
+.home-img img{
+    margin-top: 4rem;
+}
+}
