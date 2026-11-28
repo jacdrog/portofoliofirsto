@@ -174,7 +174,7 @@ font-size: 6rem;
 @media(max-width:995px){
 .home{
     flex-direction: column;
-    margin:5rem 4rem,
+    margin:5rem 4rem;
     }
 
     .home.home-contenth3{
